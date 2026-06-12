@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap");
+
+$background-color: #380000;
+$color: #fff;
+$title-color: #dc142c;
+$link-color: color-mix(in oklab, $title-color, black 10%);
+
+body {
+  background-color: $background-color;
+  color: $color;
+  font-family: "Crimson Text", serif;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+h1 {
+  color: $title-color;
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+h2 {
+  color: $title-color;
+  font-size: 3rem;
+}
+
+.links {
+  & > a {
+    color: $link-color;
+    text-decoration: none;
+
+    &:not(:last-child)::after {
+      color: $color;
+      content: "\00B7";
+      margin-left: 0.5rem;
+    }
+  }
+}
