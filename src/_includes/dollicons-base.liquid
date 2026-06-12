@@ -11,7 +11,11 @@
   </head>
 
   <body>
-    <header>
+    <audio src="/theme.mp3" autoplay loop id="theme"></audio> 
+    <div class="mute-button">
+      <button onclick="document.getElementById('theme').muted=!document.getElementById('theme').muted">Mute/Unmute</button>
+    </div>
+    <header> 
       <a href="{{ "dollicons/ember.liquid" | inputPathToUrl }}" class="icon">󱢟</a>
       <a href="{{ "dollicons/chalice.liquid" | inputPathToUrl }}" class="icon">󰋕</a>
       <a href="{{ "dollicons.liquid" | inputPathToUrl }}">
