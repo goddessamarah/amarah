@@ -20,6 +20,19 @@ body {
   text-align: center;
 }
 
+.mute-button {
+  text-align: left;
+
+  & > button {
+    background: transparent;
+    border: none;
+    color: $link-color;
+    cursor: pointer;
+    font-family: "Crimson Text", serif;
+    font-size: 1.5rem;
+  }
+}
+
 h1 {
   color: $title-color;
   font-size: 4rem;

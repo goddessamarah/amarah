@@ -5,6 +5,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "img/favicon": "/" });
   eleventyConfig.addPassthroughCopy({ "img/other": "/" });
   eleventyConfig.addPassthroughCopy({ font: "/" });
+  eleventyConfig.addPassthroughCopy({ audio: "/" });
 
   return {
     dir: {
