@@ -1,9 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap");
 
+@font-face {
+  font-family: "Arimo";
+  src: url("/ArimoNerdFont-Regular.woff2");
+}
+
 $background-color: #380000;
 $color: #fff;
 $title-color: #dc142c;
 $link-color: color-mix(in oklab, $title-color, black 10%);
+$on-background-color: color-mix(in oklab, $background-color, white 10%);
 
 body {
   background-color: $background-color;
@@ -24,6 +30,31 @@ h2 {
   font-size: 3rem;
 }
 
+h3 {
+  color: $title-color;
+  font-size: 2.5rem;
+}
+
+header {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.icon {
+  color: $link-color;
+  font-family: "Arimo", sans-serif;
+  font-size: 5rem;
+  text-decoration: none;
+}
+
+.left {
+  text-align: left;
+  padding-left: 1rem;
+}
+
 .links {
   & > a {
     color: $link-color;
@@ -34,5 +65,23 @@ h2 {
       content: "\00B7";
       margin-left: 0.5rem;
     }
+  }
+}
+
+.logo {
+  height: auto;
+  width: 10rem;
+}
+
+.on-back {
+  background-color: $on-background-color;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80vw;
+  min-height: 100vh;
+
+  & > img {
+    height: auto;
+    width: 12rem;
   }
 }
